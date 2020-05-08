@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Training and Placement Cell,PICT</title>
+<link rel="stylesheet" type="text/css" href="login.css">
+<script type = "text/javascript">
+         <!--
+            function Redirect() {
+               window.location = "tnp.php";
+            }
+         //-->
+</script>
+</head>
+<body>
+ <div class="imgcontainer">
+    <img src="logo.jpeg" alt="Avatar" class="avatar">
+  </div>
+
+<h3>Admin Login</h3>
+
+  <div div id="id01" class = "container">
+    <form action = "log3.php" method = "POST">
+      <label for="uname"><b>Admin Name</b></label><span style="color:red;">*</span>:<br>
+      <input type="text" placeholder="Enter Organisation name" name="uname" id="username" required><br>
+
+      <label for="psw"><b>Password</b></label><span style="color:red;">*</span>:<br>
+      <input type="password" placeholder="Enter Password" name="psw" id="password"required><br>
+
+      <button type="submit" name = "login">Login</button><br>
+
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </form>
+</div>
+<div class="container" style="background-color:#f1f1f1">
+  <button type="button" class="cancelbtn" onclick="Redirect();">Back</button>
+  <span class="psw">Forgot <a href="#">password?</a></span>
+</div>
+
+
+<script>
+function login(){
+    var regno = document.getElementById("username").value;
+    var password = document.getElementById("password").value;
+    if(regno=="abcd" && password=="1234"){
+        window.location.href = "tnpcell.html";
+        alert("Registered User!!!");
+    }else if(regno=="abcd" && password != "1234"){
+        alert("Invalid Password !!!");
+        window.location.href = "#id01";
+        document.getElementById("password").value = null;
+    }
+    else if(regno!="abcd" && password != "1234"){
+        alert("Invalid Credentials !!!");
+        window.location.href = "#id01";
+        document.getElementById("username").value = null;
+        document.getElementById("password").value = null;
+      }
+    return false;
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,149 @@
+<html>
+<head>
+<title> Contact us</title>
+<title> Training and Placement Cell,PICT</title>
+ <link rel="stylesheet" href="styles.css">
+ <link rel="stylesheet" href="nav.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="log.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<div class="container" style="background-color:#0F1A2E">
+	<h1><img src="ss.jpg" height="100px" width="100px"/> Training and Placement Cell,PICT,Pune</h1>
+
+	</div>
+</head>
+	<?php
+   include("connection.php");
+   session_start();
+   ?>
+<nav>
+<div class="navbar">
+  <a href="tnp.php">Home</a>
+  
+  <div class="dropdown">
+    <button class="dropbtn">Student
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="log.html">Login/Register</a>
+      <a href="rules.html">Rules and Regulations</a>
+    </div>
+  </div> 
+
+ <div class="dropdown">
+    <button class="dropbtn">Recruiters
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="tnpcell.php">Login/Register</a>
+      <a href="#">Placement Facilities</a>
+      <a href="progr">Programms</a>
+    </div>
+  </div> 
+<a href="placement_stats.html">Placement Statistics</a>
+<div class="dropdown">
+    <button class="dropbtn">Training
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="skill.php">Resume/Skill Building</a>
+      <a href="#">Alumni</a>
+    </div>
+  </div> 
+<a href="login1.php">Admin</a>
+<a href="sitemap.html">Sitemap</a>
+<a href="contactus.html">Contact US</a>
+<?php if(isset($_SESSION['login_user']))
+{
+?>
+<div class="dropdown">
+    <button class="dropbtn">Welcome <?php echo $_SESSION['login_user']; ?>
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Settings</a>
+      <a href="welcome.php">Your Profile</a>
+      <a href = "logout1.php">Logout</a>
+    </div>
+  </div>
+<?php
+	}
+	else
+	{
+	?>
+	<a href = "login_tnp.html"style = "margin-left: 620px;"><b>User Login</b></a>
+	<?php
+	}
+	?>
+</div>
+</nav>
+</head>
+<body>
+<h1>Contact Us</h1>
+	<p>Training and placement cell (TPC) of the institute handles all aspects of placements at IIT Patna for the graduating students of all departments. Right from contacting companies to managing all logistics of arranging for tests, pre placement talks and conducting final interviews the Training and Placement Cell officials and volunteers provide their best possible assistance to the recruiters.</p>
+
+<p>Interested companies can directly contact through email: <span style="color:#0000FF;font-weight:bold;">tpc@iitp.ac.in</span><br />Please feel free to contact us at - 0612-302-8091 and 0612-302-8083</p>
+
+</p><h2><u>Professor In-charge</u></h2>
+<table style="width:100%;">
+	<tr>
+		<td style="width:50%;">
+			<img class="facimage" src="images/fac/4.jpg">
+			<div class="facinfo">
+				<b>Dr. Amarnath Hegde</b><br />
+				<!-- Phone No.: +91-612-3028031<br />-->
+				<!--  Mobile No.: +91-9631221406<br />	-->
+				Email: ahegde@iitp.ac.in, pic_tnp@iitp.ac.in
+			</div>
+		</td>
+	</tr>
+</table>
+<h2><u>Team</u></h2>
+<table style="width:100%;">
+	<tr>
+		
+		<td style="width:50%;">
+			<img class="facimage" src="images/fac/5.jpg">
+			<div class="facinfo">
+				<b>Dr. Sumanta Gupta</b><br />
+			<!--	Phone No: +91-612-3028096<br />
+				 Mobile   : +91-9470062488<br /> -->
+				Email    : sumanta@iitp.ac.in<br />
+			</div>
+		</td>
+		
+		<td style="width:50%;">
+			<img class="facimage" src="https://www.iitp.ac.in/images/faculty_profile/cse/Mayank_Agarwal.jpg">
+			<div class="facinfo">
+				<b>Dr. Mayank Agarwal</b><br />
+			<!--	Phone No: +91-612-3028096<br />
+				 Mobile   : +91-9470062488<br /> -->
+				Email    : mayank265@iitp.ac.in<br />
+			</div>
+		</td>
+		
+		</tr>
+	<tr>
+				
+		<td style="width:50%;">
+			<img class="facimage" src="images/fac/7.jpg">
+			<div class="facinfo">
+				<b>Dr. Richa Chaudhary</b><br />
+				<!-- Mobile   : +91-9470062488<br /> -->
+				Email    : richa.chaudhary@iitp.ac.in
+			</div>
+		</td>
+		
+		<td style="width:50%;">
+		<img class="facimage" src="https://www.iitp.ac.in/images/faculty_profile/cbe/sushant_kumar.jpg">
+			<div class="facinfo">
+			<b>Dr. Sushant Kumar</b><br />
+		<!--	Phone No: +91-612-3028347<br />
+			 Mobile   : +91-9470062488<br /> -->
+			Email    : sushantkumar@iitp.ac.in
+			</div>
+		</td>
+		
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.576189726779!2d73.84863955103886!3d18.457542087384148!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2eac85230ba47%3A0x871eddd0a8a0a108!2sPune+Institute+of+Computer+Technology!5e0!3m2!1sen!2sin!4v1554460993704!5m2!1sen!2sin" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+	</tr>
+</table>

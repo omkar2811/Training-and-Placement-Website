@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Training and Placement Cell,PICT</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="nav1.css">
+<link rel="stylesheet" href="styles.css">
+ <link rel="stylesheet" href="nav.css">
+<link rel="stylesheet" type="text/css" href="log.css">
+<
+<!-- Plotly.js -->
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <!-- Numeric JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/numeric/1.2.6/numeric.min.js"></script>
+</head>
+
+<div class="container" style="background-color:#0F1A2E">
+	<h1><img src="ss.jpg" height="100px" width="100px"/> Training and Placement Cell,PICT,Pune</h1>
+
+	</div>
+</head>
+<nav>
+<div class="navbar">
+  <a href="tnp.php">Home</a>
+  
+  <div class="dropdown">
+    <button class="dropbtn">Student
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="log.html">Login/Register</a>
+      <a href="rules.html">Rules and Regulations</a>
+    </div>
+  </div> 
+
+ <div class="dropdown">
+    <button class="dropbtn">Recruiters
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="tnpcell.php">Login/Register</a>
+      <a href="#">Placement Facilities</a>
+      <a href="#">Procedure</a>
+    </div>
+  </div> 
+<a href="placement_stats.html">Placement Statistics</a>
+<div class="dropdown">
+    <button class="dropbtn">Training
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="skill.php">Resume/Skill Building</a>
+      <a href="#">Alumni</a>
+    </div>
+  </div> 
+<a href="login1.php">Admin</a>
+<a href="sitemap.html">Sitemap</a>
+<a href="contactus.html">Contact US</a>
+</div>
+</nav>
+<p style = "font-size :20px;">
+	     <strong>Training and placement cell (TPC) </strong> of the institute handles all aspects of placements for the graduating students of all  
+departments. Right from contacting companies to managing all logistics, arranging the tests, pre-placement talks and conducting final interviews, TPC provides the best possible assistance to the recruiters. TPC comprising of student representatives and faculty members who facilitate the interaction between students and organizations to find their best matches in terms of their expectation, aspirations and requirements.</style><br /><br /></p>
+<p style = "font-size :20px;">
+	In session 2017-18, the TPC has been actively involved in the placement of the final year UG students and final year PG students, who were admitted in the year 2014 and 2015 respectively. Placement process has set a new benchmark by attracting the highest number of recruiters. Out of 140 UG registered and eligible students, 125 have got placed with an average package of 11.47 Lakhs. Also, out of 49 registered and eligible PG students, 31 have got placed with an average package of 8.34 Lakhs. <br /><br />
+		</p>
+    <p style = "font-size :20px;">
+	This year, PICT has placed 90% of its B.E (2014-18) and 64% of the M.E (2016-18) students with 192 offers. M.Sc and Ph.D students too received offers from various universities and Institute. The highest package of approx. 50 Lakhs was offered by Google as PPO (Pre Placement Offer) and Rs. 39.23 L per annum by Adobe. Similarly, DE Shaw has offered 29.5 L to two students and Amazon has hired four students so far this year, offering 27.6 L. <br /><br />
+</p>					
+<p style = "font-size :20px;">
+
+					In this placement season, TPC has enhanced the number of core companies to visit PICT campus.
+</p>
+<h1> Placement Statistics</h1>
+
+<h2> Number Of Students recruited (2017-18)</h2>
+<div id="myDiv" style = "margin-left:150px;"><!-- Plotly chart will be drawn inside this DIV --></div>
+    <script src="plot.js"></script>
+<h2> Number Of Students recruited (2016-17)</h2>
+<div id = "myDiv1" style = "margin-left:150px;"></div>
+<script>var data = [{
+  values: [94, 56, 155],
+  labels: ['IT', 'ENTC', 'Computer'],
+  type: 'pie'
+}];
+
+var layout = {
+  height: 500,
+  width: 1500
+};
+
+Plotly.newPlot('myDiv1', data, layout);
+</script>
+<h2> Annual Salary offered by companies (2017-18)</h2>
+<img src = "Stats.png" alt = "Place"style = "margin-left:150px;"/>
+</br>
+<h2> Annual Salary offered by companies (2016-17)</h2>
+<img src = "Stats1.png" alt = "Place"style = "margin-left:150px;"/>
+
+</body>
+</html>

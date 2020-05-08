@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Training and Placement Cell,PICT</title>
+ <link rel="stylesheet" href="styles.css">
+ <link rel="stylesheet" href="nav.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="log.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<div class="container" style="background-color:#0F1A2E">
+	<h1><img src="ss.jpg" height="100px" width="100px"/> Training and Placement Cell,PICT,Pune</h1>
+
+	</div>
+</head>
+	<?php
+   include("connection.php");
+   session_start();
+   ?>
+<nav>
+<div class="navbar">
+  <a href="tnp.php">Home</a>
+  
+  <div class="dropdown">
+    <button class="dropbtn">Student
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="log.html">Login/Register</a>
+      <a href="rules.html">Rules and Regulations</a>
+    </div>
+  </div> 
+
+ <div class="dropdown">
+    <button class="dropbtn">Recruiters
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="tnpcell.php">Login/Register</a>
+      <a href="#">Placement Facilities</a>
+      <a href="#">Programms</a>
+    </div>
+  </div> 
+<a href="placement_stats.html">Placement Statistics</a>
+<div class="dropdown">
+    <button class="dropbtn">Training
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Resume/Skill Building</a>
+      <a href="#">Alumni</a>
+    </div>
+  </div> 
+<a href="login1.php">Admin</a>
+<a href="sitemap.html">Sitemap</a>
+<a href="contactus.html">Contact US</a>
+<?php if(isset($_SESSION['login_user'])){?>
+<div class="dropdown">
+    <button class="dropbtn"style = "margin-left :620px;">Welcome <?php echo $_SESSION['login_user']; ?>
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content"style = "margin-left : 620px;">
+      <a href="#">Settings</a>
+      <a href="welcome.php">Your Profile</a>
+      <a href = "logout1.php">Logout</a>
+    </div>
+  </div>
+<?php
+	}
+	else
+	{
+	?>
+	<a href = "login_tnp.html"style = "margin-left: 620px;"><b>User Login</b></a>
+	<?php
+	}
+	?>
+</div>
+</nav>
+<h1>Programmes</h1><br /><br />
+					<table align="center" width="90%" border="1" cellspacing="3" style="border-collapse:collapse; border:solid windowtext 1.0pt">
+	<tbody>
+		<tr>
+			<td colspan="3" style="text-align:center"><strong>B.Tech</strong></td>
+		</tr>
+		<tr>
+			<td style="background-color:#fde9d9; text-align:center; width:10%;"><strong>Sl.No</strong></td>
+			<td style="background-color:#fde9d9; text-align:center; width:50%;"><strong>Branch</strong></td>
+			<td style="background-color:#fde9d9; text-align:center; width:20%;"><strong>Brochure</strong></td>
+		</tr>
+		<tr>
+			<td style="text-align:center; vertical-align:top">1</td>
+			<td style="vertical-align:top">Chemical Science and Technology</td>
+			<td style="vertical-align:top; text-align:center;"><a href="downloads/B.Tech_Brochure/CH -B.Tech_ 18-19.pdf" target="_blank">Download</a></td>
+		</tr>
+		<tr>
+			<td style="text-align:center; vertical-align:top">2</td>
+			<td style="vertical-align:top">Civil Engineering</td>
+			<td style="vertical-align:top; text-align:center;"><a href="downloads/B.Tech_Brochure/CE -B.Tech_ 18-19.pdf" target="_blank">Download</a></td>
+		</tr>
+		<tr>
+			<td style="text-align:center; vertical-align:top">3</td>
+			<td style="vertical-align:top">Computer Science&nbsp; and Engineering</td>
+			<td style="vertical-align:top; text-align:center;"><a href="downloads/B.Tech_Brochure/CSE -B.Tech_ 18-19.pdf" target="_blank">Download</a></td>
+		</tr>
+		<tr>
+			<td style="text-align:center; vertical-align:top">4</td>
+			<td style="vertical-align:top">Electrical Engineering</td>
+			<td style="vertical-align:top; text-align:center;"><a href="downloads/B.Tech_Brochure/EE -B.Tech_ 18-19.pdf" target="_blank">Download</a></td>
+		</tr>
+		<tr>
+			<td style="text-align:center; vertical-align:top">5</td>
+			<td style="vertical-align:top">Mechanical Engineering</td>
+			<td style="vertical-align:top; text-align:center;"><a href="downloads/B.Tech_Brochure/ME -B.Tech_ 18-19.pdf" target="_blank">Download</a></td>
+		</tr>
+	</tbody>
+</table>
+<br />

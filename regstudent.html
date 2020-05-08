@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Training and Placement Cell,PICT</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="nav1.css">
+<script type = "text/javascript">
+         <!--
+            function Redirect() {
+               window.location = "login_tnp.html";
+            }
+         //-->
+      </script>
+ <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" type="text/css" href="log.css">
+<div class="container" style="background-color:#0F1A2E">
+	<h1><img src="ss.jpg" height="100px" width="100px"/> Training and Placement Cell,PICT,Pune</h1>
+
+	</div>
+</head>
+<nav>
+<div class="navbar">
+  <a href="#home">Home</a>
+  
+  <div class="dropdown">
+    <button class="dropbtn">Student
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="log.php">Login/Register</a>
+      <a href="rules.html">Rules and Regulations</a>
+    </div>
+  </div> 
+
+ <div class="dropdown">
+    <button class="dropbtn">Recruiters
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="tnpcell.php">Login/Register</a>
+      <a href="programm.php">Programs</a>
+    </div>
+  </div> 
+<a href="placement_stats.html">Placement Statistics</a>
+<div class="dropdown">
+    <button class="dropbtn">Training
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Resume/Skill Building</a>
+      <a href="#">Alumni</a>
+    </div>
+  </div> 
+<a href="login1.php">Admin</a>
+<a href="sitemap.php">Sitemap</a>
+<a href="contact.php">Contact US</a>
+</div>
+</nav>
+
+<div class="container">
+      <label for="name"><b>Name</b></label>
+      <input type="text" placeholder="Enter Name" name="name" required>
+
+      <label for="mail" onload="document.form1.text1.focus()" ><b>E-mail</b></label>
+      <input type="text" placeholder="Enter email" name="email" required >
+<form name="form1" action="#">
+
+	  <br><label for="roll"><b>Current Roll No.</b></label>
+      <input type="number" placeholder="Enter Roll No." name="first" required></br>
+      
+      <br><label for="first"><b>Backlog</b></label>
+      <label for="first"><b>Yes</b></label>
+      <input type="radio" name="backlog" value = "Yes" required>
+      <label for="first"><b>No</b></label>
+      <input type="radio"name="backlog"value = "No" required></br>
+	  
+      <br><label for="first"><b>First Year Cgpa</b></label>
+      <input type="number" placeholder="Enter 1st cgpa" name="first" required></br>
+        
+      <br><label for="second"><b>Second Year Cgpa</b></label>
+      <input type="number" placeholder="Enter 2nd cgpa" name="second" required></br>
+      
+      <br><label for="third"><b>Third Year Cgpa</b></label>
+      <input type="number" placeholder="Enter 3rd cgpa" name="third" required></br>
+      
+      <br><label for="forth"><b>Forth Year Cgpa</b></label>
+      <input type="number" placeholder="Enter 4th cgpa" name="fourth"></br>
+	
+      <label for="Password"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" password="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" requiredrequired>
+      
+      <input type = "reset" value = "reset"></br>
+	<script>
+var myInput = document.getElementById("psw");
+var letter = document.getElementById("letter");
+var capital = document.getElementById("capital");
+var number = document.getElementById("number");
+var length = document.getElementById("length");
+
+myInput.onfocus = function() {
+  document.getElementById("message").style.display = "block";
+}
+
+myInput.onblur = function() {
+  document.getElementById("message").style.display = "none";
+}
+
+// When the user starts to type something inside the password field
+myInput.onkeyup = function() {
+  // Validate lowercase letters
+  var lowerCaseLetters = /[a-z]/g;
+  if(myInput.value.match(lowerCaseLetters)) {  
+    letter.classList.remove("invalid");
+    letter.classList.add("valid");
+  } else {
+    letter.classList.remove("valid");
+    letter.classList.add("invalid");
+  }
+  
+  // Validate capital letters
+  var upperCaseLetters = /[A-Z]/g;
+  if(myInput.value.match(upperCaseLetters)) {  
+    capital.classList.remove("invalid");
+    capital.classList.add("valid");
+  } else {
+    capital.classList.remove("valid");
+    capital.classList.add("invalid");
+  }
+
+  // Validate numbers
+  var numbers = /[0-9]/g;
+  if(myInput.value.match(numbers)) {  
+    number.classList.remove("invalid");
+    number.classList.add("valid");
+  } else {
+    number.classList.remove("valid");
+    number.classList.add("invalid");
+  }
+  
+  // Validate length
+  if(myInput.value.length >= 8) {
+    length.classList.remove("invalid");
+    length.classList.add("valid");
+  } else {
+    length.classList.remove("valid");
+    length.classList.add("invalid");
+  }
+}
+</script>
+      
+      <button bgcolor="blue"><font color="white"><a href="st.xml">Register</a></font></bg></button>
+
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="loginbtn"><a href="log.html">Login</a></button>
+    </div>
+  </form>
